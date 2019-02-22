@@ -36,6 +36,11 @@ public class FunctionManager {
     }
 
 
+    public void addFunction(@NonNull FunBase fun) {
+        funs.put(fun.getName(), fun);
+    }
+
+
     public <R, P> R invokeParamsResult(@NonNull String name, @NonNull P params) {
         FunBase function = funs.get(name);
         if (function == null) {

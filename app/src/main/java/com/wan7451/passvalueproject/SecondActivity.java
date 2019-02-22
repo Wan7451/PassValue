@@ -29,5 +29,7 @@ public class SecondActivity extends AppCompatActivity {
                 Toast.makeText(getBaseContext(), aa, Toast.LENGTH_SHORT).show();
             }
         });
+
+//        FunctionManager.init().remove("方法名");
     }
 }
